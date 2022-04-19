@@ -16,8 +16,8 @@ if (isset($_GET['get_users'])) {
         <td><?php echo $row['firstname']; ?></td>
         <td><?php echo $row['lastname']; ?></td>
         <td><?php echo $row['email']; ?></td>
+	<td><?php echo $row['age']; ?></td>
         <td><?php echo $row['gender']; ?></td>
-        <td><?php echo $row['age']; ?></td>
         <td><button class="btn btn-info" onclick="edit_record(<?php echo $row['id']; ?>)" >Edit</button>&nbsp;<button class="btn btn-danger"  onclick="delete_record(<?php echo $row['id']; ?>)" >Delete</button></td>
     </tr>   
                 
