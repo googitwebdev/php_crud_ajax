@@ -34,7 +34,7 @@ $result = $conn->query($sql);
 		<th>First Name</th>
 		<th>Last Name</th>
 		<th>Email</th>
-        <th>Age</th>
+                <th>Age</th>
 		<th>Gender</th>
 		<th>Action</th>
 	</tr>
