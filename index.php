@@ -11,30 +11,33 @@ $result = $conn->query($sql);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>View Page</title>
+	<title>Welcome to AJAX PHP CRUD Function</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
     <meta http-equiv="Pragma" content="no-cache"/>
     <meta http-equiv="Expires" content="0"/>
-	 <!-- to make it looking good im using bootstrap -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-	<div class="container mt-5">
+<div class="container mt-5">
+
+<h3 class="text-center">Welcome to AJAX PHP CRUD Function!</h3>
+    <p class="datatable design text-center">Example PHP code that can create, read, update and delete function using AJAX application. </p>
 		
-<button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#userformModal">Add Member</button>
+<button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#userformModal">Enlist</button>
 <br>
 <h2>Member List</h2><br>
 <table class="table">
 	<thead>
 		<tr>
-		<th>ID</th>
+		<th>ID No.#</th>
 		<th>First Name</th>
 		<th>Last Name</th>
-		<th>Email</th>
-                <th>Age</th>
+		<th>Email Ad</th>
+        <th>Age</th>
 		<th>Gender</th>
 		<th>Action</th>
 	</tr>
@@ -50,7 +53,7 @@ $result = $conn->query($sql);
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Update Form</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Update Member Form</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -64,12 +67,12 @@ $result = $conn->query($sql);
                 </div>
 
                 <div class="form-group">
-                <label>Last name</label>
+                <label>Last Name</label>
                 <input type="text" name="lastname" id="lastname" class="form-control">
                 </div>
 
                 <div class="form-group">
-                <label>Email</label>
+                <label>Email Ad</label>
                 <input type="email" name="email" id="email" class="form-control">
                 </div>
 
@@ -203,5 +206,9 @@ $result = $conn->query($sql);
 
     get_all_users();
 </script>
+<br>
+<footer align="center">
+Copyright © 2022 . All Right Reserved. <a href="https://goog-it.com/">Googit Web Dev</a>
+</footer>
 </body>
 </html>
